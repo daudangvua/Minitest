@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký tài khoản</title>
+</head>
+<body>
+<form action="">
+    <h2>Đăng ký tài khoản</h2>
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        <label>Họ và tên: <input type="text" name="fullname" placeholder="Nhập họ và tên"></label><br><br>
+        <label>Email: <input type="email" name="Email" placeholder="example@gmail.com"></label><br><br>
+        <label>Số điện thoại: <input type="text" name="phone" placeholder="Nhập số điện thoại"></label><br><br>
+        <label>Mật khẩu: <input type="password" name="password"></label><br><br>
+        <label>Giới tính:</label>
+        <label><input type="radio" name="gender" value="male"> Nam</label>
+        <label><input type="radio" name="gender" value="female"> Nữ</label>
+        <label><input type="radio" id="other" name="gender" value="other"> Khác</label>
+    </fieldset><br>
+    <fieldset>
+        <legend>Thông tin bổ xung</legend>
+        <label>Ngày sinh: <input name="date" type="date"></label><br><br>
+        <label>Nghề nghiệp:
+            <select name="Nghề nghiệp">
+                <option value="SV">Sinh viên</option>
+                <option value="CN">Công nhân</option>
+                <option value="ND">Nông dân</option>
+            </select>
+        </label>
+    </fieldset><br>
+        <input type="submit" value="Đăng ký" style="background-color: blue; color: white; border: 9px solid blue;">
+    <input type="reset" value="Xóa" style="background-color: blue; color: white; border: 9px solid blue;">
+</form>
+</body>
+</html>
