@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let so = prompt("Kiểm tra số nguyên tố")
+    while (so > 0) {
+        if (so == 2) {
+            document.write(so + " Đây là số nguyên tố");
+            break
+        } else if (so == 3) {
+            document.write(so + " Đây là số nguyên tố");
+            break;
+        } else if (so % 2 === 0 || so %3 === 0 || so == 1) {
+            document.write(so + " Đây không phải là số nguyên tố");
+            break;
+        } else document.write(so + " Đây là số nguyên tố");
+        break;
+    }
+</script>
+</body>
+</html>
