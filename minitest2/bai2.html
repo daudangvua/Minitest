@@ -6,20 +6,14 @@
 </head>
 <body>
 <script>
-    for (let fizz = 1; fizz < 100; fizz++) {
-        if (fizz % 3 == 0) {
-            console.log("Fizz");
-        }
-    }
-    for (let buzz = 1; buzz < 100; buzz++) {
-        if (buzz % 5 == 0) {
-            console.log("Buzz");
-        }
-    }
-    for (let fizzbuzz = 1; fizzbuzz < 100; fizzbuzz++) {
-        if (fizzbuzz % 5 == 0 && fizzbuzz % 3 == 0) {
+    for (let i = 1; i < 100; i++) {
+        if (i % 5 === 0 && i % 3 === 0) {
             console.log("FizzBuzz");
-        }
+        }else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else console.log(i);
     }
 </script>
 </body>
