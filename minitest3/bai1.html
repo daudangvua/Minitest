@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="deleteArr1" ></p>
+<script>
+    // mảng cho trước
+    let addArr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+    document.getElementById("newAdd").innerHTML = `Mảng cho trước: ${addArr}`;
+    let xoa = parseInt(prompt("nhập giá trị muốn xóa từ 0 đến 10"));
+    let enter = deleteArr(addArr,xoa)
+
+    // hàm xóa giá trị nhập vào
+    function deleteArr(arr,del){
+        let newArr = [];
+        if(del == "") {
+            return alert("không để trống");
+          } else {
+            for(let i=0; i < arr.length; i++){
+              if(arr[i] != del){
+                  newArr.push(arr[i]);
+              }
+            }
+
+            return newArr;
+          }
+
+    }
+    document.getElementById("deleteArr1").innerHTML = `Mảng mới là: ${enter}`;
+</script>
+</body>
+</html>

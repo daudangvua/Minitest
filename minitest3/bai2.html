@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let toan = parseFloat(prompt("Nhập điểm toán"));
+  let english = parseFloat(prompt("Nhập điểm english"));
+  let van = parseFloat(prompt("Nhập điểm văn"));
+  // hàm tính điểm trung bình
+  function tb() {
+    return (toan + english + van) / 3;
+
+  }
+  // hàm đánh giá
+  function danhGia() {
+    let diem = tb();
+    if (diem < 5) {
+      alert("Không đạt");
+    } else if (diem < 8) {
+      alert("Đạt");
+    } else {
+      alert("Tốt");
+    }
+  }
+  danhGia();
+</script>
+</body>
+</html>

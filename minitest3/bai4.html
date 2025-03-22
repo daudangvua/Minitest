@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","a"];
+  let check = prompt("nhập kí tự bất kì");
+  let varr = count(arr,check);
+  function count(so1,so2) {
+    let a = 0;
+    for (let i = 0; i < so1.length; i++) {
+      if (so1[i] == so2) {
+        a = a +1;
+      }
+    }
+    return a;
+  }
+  alert(`Có ${varr} phần tử ${check} được tìm thấy`);
+</script>
+</body>
+</html>
